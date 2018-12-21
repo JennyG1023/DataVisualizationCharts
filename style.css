@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+.visual-type {
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+}
+
+.grid {
+  text-align: center;
+}
+
+.ReactTable {
+  overflow-y: scroll;
+}
+
+.option-menu-parent { 
+  position: relative; 
+  display: inline-block;
+  width: 40%;
+}
+
+.option-menu { 
+  visibility: hidden;
+  background-color: rgb(255, 255, 255);
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+  width: 30%;
+  transform: translateY(-1em);
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.option-menu-parent:hover .option-menu {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+  border: 1px solid rgb(128, 128, 128);
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.3s;
+}
+
+.button-group .button{
+  background-color: rgba(237, 237, 237, 0.988); 
+  border: 1px solid rgb(128, 128, 128);
+  color: rgb(38, 38, 38);
+  padding: 4px 28px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.button-group .button:not(:last-child) {
+  border-right: none; 
+}
+
+.button-group .button:hover {
+  background-color: rgb(170, 170, 170);
+}
+
+.selected-name-header {
+  padding-top: 15px;
+  padding-left: 44%;
+  margin-top: 2px;
+  color: rgb(46, 46, 46);
+  font-size: 25px;
+}
+
+.line-graph {
+  width: 1150px;
+  box-sizing: border-box;
+  display: block;
+  cursor: pointer;  
+}
+
+.container {
+  padding: 15px;
+  margin: 15px;
+  display: block;
+}
+
+.select-box-main {
+  float: left;
+  font-size: 16px;
+  margin-right: 35px;
+  cursor: pointer;
+}
+
+#select-box {
+  padding-top: 10px;
+}
+
+.select-box-box {
+  width: 193px;
+  position: relative;
+  background-color: rgba(255, 254, 254, 0.988);
+  cursor: pointer;  
+  z-index: 1;
+}
+
+.select-box-container {
+  height: 25px;
+  border: 1px solid rgb(170, 170, 170);
+  width: 100%;
+}
+
+.select-box-selected-item {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  padding: 3px 12px;
+  vertical-align: middle;
+  background-color: rgb(255, 255, 255)
+}
+
+.select-box-items div {
+  border-bottom: 1px solid rgb(0, 0, 0);
+  border-right: 1px solid rgb(0, 0, 0);
+  border-left: 1px solid rgb(0, 0, 0);
+  border-top: 1px solid rgb(0, 0, 0);
+  padding: 6px;
+  padding-left: 20px;
+  background-color: rgb(255, 255, 255);
+  margin: -1px;
+}
+
+.select-box--arrow {
+  width: 25px;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  background: rgb(161, 161, 161);
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.select-box--arrow-down {
+  position: absolute;
+  top: 8px;
+  left: 4px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid rgb(255, 255, 255);
+}
+
+.select-box--arrow-up {
+  position: absolute;
+  top: 7px;
+  left: 4px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 10px solid rgb(255, 255, 255);;
+}
+
+.header {
+  padding: 0; 
+  margin: 0;
+}
